@@ -7,8 +7,8 @@ xiaomi_vayu:
   edition: phosh
   variant: phone
   apilevel: 30
-  use_internal_repository: true
+  use_internal_repository: false
 
   packages:
-    - adaptation-xiaomi-vayu
-    - adaptation-xiaomi-vayu-configs
+    - adaptation-droidian-vayu
+    - adaptation-vayu-configs
