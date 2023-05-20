@@ -1,0 +1,14 @@
+# This file has been generated automatically by droidian-new-device
+
+# xiaomi vayu
+xiaomi_vayu:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 30
+  use_internal_repository: true
+
+  packages:
+    - adaptation-xiaomi-vayu
+    - adaptation-xiaomi-vayu-configs
