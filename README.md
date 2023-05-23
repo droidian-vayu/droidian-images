@@ -1,3 +1,5 @@
+**Read [wiki](https://github.com/droidian-vayu/device-page/wiki)**
+
 Droidian
 ========
 
