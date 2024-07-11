@@ -10,5 +10,5 @@ xiaomi_vayu:
   use_internal_repository: false
 
   packages:
-    - adaptation-droidian-vayu
-    - adaptation-vayu-configs
+    - adaptation-xiaomi-vayu
+    - adaptation-xiaomi-vayu-configs
