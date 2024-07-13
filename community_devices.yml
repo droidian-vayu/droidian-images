@@ -19,13 +19,3 @@ xiaomi_vayu:
   apilevel: 30
 
   packages: *xiaomi_vayu_packages
-
-
-xiaomi_vayu_light:
-  type: image
-  arch: arm64
-  edition: phosh_light
-  variant: phone
-  apilevel: 30
-
-  packages: *xiaomi_vayu_packages
