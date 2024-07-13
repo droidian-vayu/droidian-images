@@ -1,14 +1,31 @@
-# This file has been generated automatically by droidian-new-device
+# Xiaomi vayu packages
+.xiaomi_vayu_packages:
+  packages: &xiaomi_vayu_packages
+    - adaptation-xiaomi-vayu
+    - adaptation-xiaomi-vayu-configs
+    - linux-image-4.14-190-xiaomi-vayu
+    - linux-bootimage-4.14-190-xiaomi-vayu
+    - linux-bootimage-xiaomi-vayu
+    - qtwayland5
+    - gstreamer1.0-gl
+    - gstreamer1.0-libav
 
-# xiaomi vayu
+# Xiaomi vayu image
 xiaomi_vayu:
   type: image
   arch: arm64
   edition: phosh
   variant: phone
   apilevel: 30
-  use_internal_repository: false
 
-  packages:
-    - adaptation-xiaomi-vayu
-    - adaptation-xiaomi-vayu-configs
+  packages: *xiaomi_vayu_packages
+
+
+xiaomi_vayu_light:
+  type: image
+  arch: arm64
+  edition: phosh_light
+  variant: phone
+  apilevel: 30
+
+  packages: *xiaomi_vayu_packages
