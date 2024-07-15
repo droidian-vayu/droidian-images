@@ -6,4 +6,4 @@
 	url = https://github.com/droidian-releng/android-recovery-flashing-template.git
 [submodule "android-image-flashing-template"]
 	path = android-image-flashing-template
-	url = https://github.com/droidian-releng/android-image-flashing-template.git
+	url = https://github.com/droidian-vayu/android-image-flashing-template.git
