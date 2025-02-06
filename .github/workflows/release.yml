@@ -78,7 +78,7 @@ jobs:
           docker exec $CONTAINER_HASH /bin/sh -c 'cd /buildd/sources; DROIDIAN_VERSION="${{ env.DROIDIAN_VERSION }}" ./generate_device_recipe.py ${{ matrix.config.product }} ${{ matrix.config.arch }} ${{ matrix.config.edition }} ${{ matrix.config.variant }} ${{ matrix.config.apilevel }} && debos --disable-fakemachine generated/droidian.yaml'
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: droidian-out-${{ matrix.config.product }}-${{ matrix.config.arch }}-${{ matrix.config.edition }}-${{ matrix.config.variant }}-${{ matrix.config.apilevel }}
           path: out/*
@@ -120,7 +120,7 @@ jobs:
           tag: nightly
 
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: droidian-out
 
@@ -168,7 +168,7 @@ jobs:
 
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: droidian-out-${{ matrix.config.product }}-${{ matrix.config.arch }}-${{ matrix.config.edition }}-${{ matrix.config.variant }}-${{ matrix.config.apilevel }}
           path: droidian-out
