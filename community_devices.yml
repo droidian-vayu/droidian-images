@@ -9,6 +9,8 @@
     - qtwayland5
     - gstreamer1.0-gl
     - gstreamer1.0-libav
+    - libdroid-hal-lights
+    - droidian-quirks-firefox-gpu
 
 # Xiaomi vayu image
 xiaomi_vayu:
